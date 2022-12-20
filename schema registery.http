@@ -1,0 +1,14 @@
+
+
+GET http://localhost:8081/subjects
+Accept: application/json
+###
+
+GET http://localhost:8081/schemas
+Accept: application/json
+###
+
+DELETE http://localhost:8081/subjects/ratedBook-value
+Accept: application/json
+
+###

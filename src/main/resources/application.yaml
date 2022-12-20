@@ -1,0 +1,17 @@
+spring:
+  kafka:
+    streams:
+      application-id: book-processor
+      properties:
+        cache:
+          max:
+            bytes:
+              buffering: '0'
+        default:
+          key:
+            serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+          value:
+            serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+        schema:
+          registry:
+            url: http://localhost:8081/

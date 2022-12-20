@@ -1,0 +1,11 @@
+{
+  "namespace": "com.example.kafkastreamsdemo",
+  "type": "record",
+  "name": "RatedBook",
+  "fields": [
+    {"name": "id", "type": "long"},
+    {"name": "title", "type": "string"},
+    {"name": "release_year", "type": "int"},
+    {"name": "rating", "type": "double"}
+  ]
+}
